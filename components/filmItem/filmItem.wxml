@@ -1,0 +1,9 @@
+<view bindtap='showDetail' data-id="{{ film.id }}">
+  <image class="item-img" src="{{film.cover.url}}"></image>
+  <text class="item-name">{{film.title}}</text>
+  <view class='item-star no-comment' wx:if="{{!film.rating}}">暂无评价</view>
+  <view class='item-star' wx:if="{{film.rating}}">
+    <image class="image" wx:for="{{[2,4,6,8,10]}}" wx:key="{{index}}" src="../../imgs/star-{{ (film.rating.value+0.5)>=item ? 'open':'close' }}.png"></image>
+    <text class='item-source {{ film.rating.value%1==0? "addZero":"" }}' style="font-size: 22rpx; padding-left: 8rpx;color: #999;">{{ film.rating.value }}</text>
+  </view>
+</view>

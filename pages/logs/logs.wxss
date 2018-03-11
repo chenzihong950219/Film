@@ -1,0 +1,63 @@
+.contianer{
+  width: 100%;
+}
+.title{
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #b0b0b0;
+}
+.comment-container{
+  width: 100%;
+  padding: 30rpx 40rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #b0b0b0;
+  
+}
+.left{
+  display: inline-block;
+  width: 72%;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+ 
+}
+.comment-title{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #555;
+}
+.right{
+  display: inline-block;
+  box-sizing: border-box;
+  width:28%;
+  
+  
+}
+.right image{
+  width:100%;
+  height: 240rpx;
+
+}
+.comment-content{
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #999;
+  height: 160rpx;
+  line-height: 40rpx;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-align: justify;
+}
+.bottom text:first-child{
+  font-size: 24rpx;
+  color: #999;
+}
+.bottom text:last-child{
+  font-size: 24rpx;
+  color: #42bd56;
+  padding-left: 5rpx;
+}
+.ww{
+  width: 100%;
+}

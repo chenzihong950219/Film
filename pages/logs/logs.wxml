@@ -1,0 +1,19 @@
+<!--logs.wxml-->
+<view class='contianer' wx:for="{{recommend_feeds}}" wx:for-item="feeds">
+  <view class='title'>{{feeds.date}}</view>
+
+  <view class='comment-container' wx:for="{{feeds.recommend_feeds}}" wx:for-item="feed">
+    <view class='left {{!feed.target.cover_url?"ww":""}}'>
+      <view class='comment-title'>{{feed.title}}</view>
+      <view class='comment-content'>{{feed.target.desc}}</view>
+    </view>
+    <view class='right' wx:if="{{feed.target.cover_url}}">
+      <image src="{{feed.target.cover_url}}"></image>
+    </view>
+    <view class='bottom'>
+      <text>by</text>
+       <text>{{feed.target.author.name}}</text>
+    </view>
+  </view>
+</view>
+
